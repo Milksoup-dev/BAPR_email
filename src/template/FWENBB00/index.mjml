@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" />
+  </mj-head>
+  <mj-body background-color="#F5F5F5">
+    <!-- Header -->
+    <mj-section background-color="#012169" padding="32px">
+      <mj-column>
+        <mj-image width="263px" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/Logo_BAPR.svg"></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Main -->
+    <mj-section background-color="#fff">
+      <mj-column padding="32px">
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
+          Gentile <b>Nome Cognome</b>,<br />le informazioni inserite nella sua richiesta di apertura del Suo conto sono state salvate, per completarla può seguire i seguenti passaggi:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Customer service -->
+    <mj-section background-color="#3378BF" padding="32px 64px">
+        <mj-column>
+            <mj-image padding="0" src="https://github.com/Milksoup-dev/BAPR_risorse/blob/main/template_email_conto_self/customer_services.png?raw=true" alt="Assistenza_clienti" width="96px" />
+            <mj-text color="#FFF" font-family="Open Sans" font-weight="600" font-size="24px" align="center" padding="24px 0">
+                Assistenza clienti
+            </mj-text>
+            <mj-divider padding="0" border-width="2px" border-style="solid" border-color="#FFF" />
+            <mj-text color="#FFF" font-family="Open Sans" font-size="14px" padding="24px 0" line-height="1.3" font-weight="400">
+                Se desidera assistenza durante la procedura può contattare telefonicamente il Servizio Clienti disponibile al numero verde <b>XXX XXX XXX</b>, attivo dal lunedì al venerdì dalle ore 09:00 alle ore 13:30 e dalle ore 15:00 alle ore 17:00.<br/><br/>Per maggiori informazioni può fare riferimento al nostro sito web <b>www.XXX.it</b>, o inviare una mail a <b>mail@mail.it</b>. Daremo seguito alla sua richiesta il prima possibile.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+    <!-- Disclaimer -->
+    <mj-section padding="48px" background-color="rgba(97, 165, 218, 0.05)">
+        <mj-column padding="0">
+            <mj-text padding="0" align="center" font-family="Open Sans" font-weight="600" font-size="24px" color="#012169">
+                La ringraziamo per averci scelto.
+            </mj-text>
+            <mj-divider padding="24px 0" border-width="2px" border-style="solid" border-color="#3378BF" />
+            <mj-text padding="0" color="#012169" font-size="9px" font-family="Open Sans" align="justify">
+                La presente comunicazione è ad uso esclusivo del destinatario cui è indirizzata. Il presente messaggio contiene informazioni di natura confidenziale o eventualmente tutelate dal segreto professionale ovvero protette dalle norme sul copyright in conformità alla normativa vigente. Qualora la presente comunicazione non fosse a voi indirizzata, vogliate prendere nota che anche la parziale utilizzazione, riproduzione, duplicazione o divulgazione di quanto in essa contenuto sono severamente vietate. In tale caso siete pregati sin d'ora di voler contattare il mittente e di eliminare il presente messaggio di posta elettronica dal Vostro sistema. Il presente messaggio di posta elettronica non è da intendersi quale consenso all'utilizzo dei dati relativi al mittente per scopi commerciali o promozionali (direct marketing) o di trasferimento dei medesimi a terzi.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+    <!-- Footer -->
+    <mj-section background-color="#012169" padding="12px 32px">
+      <mj-column vertical-align="middle" padding="0">
+        <mj-text padding="0" font-family="Open Sans" font-weight="600" font-size="24px" color="#fff" align="right">
+          bapr.it
+        </mj-text>
+      </mj-column>
+      <mj-column padding="0" width="16px" vertical-align="middle">
+        <mj-text align="center">
+          <img src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/vertical_divider.svg" />
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle" padding="0">
+        <mj-social icon-padding="5px" icon-size="32px" align="left">
+          <mj-social-element href="https://instagram.com" target="_blank" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/linkedin.svg">
+          </mj-social-element>
+          <mj-social-element href="https://instagram.com" target="_blank" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/youtube.svg">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+</mjml>
