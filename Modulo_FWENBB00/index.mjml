@@ -1,0 +1,9 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column background-color="#012169" padding="32px">
+        <mj-image width="100px" src="https://mjml.io/assets/img/logo-small.png"></mj-image>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
