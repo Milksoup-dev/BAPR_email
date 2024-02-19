@@ -6,31 +6,48 @@
         border-radius: 8px;
         position: relative;
       }
-      .hide_on_mobile, .footer-divider {
+
+      .hide_on_mobile,
+      .footer-divider {
         display: none !important;
       }
-      .socials{
+
+      .socials {
         text-align: center;
       }
+
       .hide_on_desktop {
-          display: block !important;
+        display: block !important;
       }
+
+      .new-customer {
+        box-sizing: border-box;
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, #012169, #3378BF) border-box;
+        border-radius: 12px;
+        border: 4px solid transparent;
+      }
+
       @media only screen and (min-width: 480px) {
         .hide_on_desktop {
           display: none !important;
         }
+
         .hide_on_mobile {
           display: block !important;
         }
-        .footer-divider{
+
+        .footer-divider {
           display: inline-block !important;
         }
-        .socials{
+
+        .socials {
           text-align: left;
-        }   
-        .bapr-link{
+        }
+
+        .bapr-link {
           text-align: right;
-        }     
+        }
       }
     </mj-style>
   </mj-head>
@@ -41,11 +58,11 @@
         <mj-image width="263px" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/Logo_BAPR.svg"></mj-image>
       </mj-column>
     </mj-section>
-    <!-- Main -->
+    <!-- Text 1-->
     <mj-section background-color="#fff">
       <mj-column padding="24px 32px">
         <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
-          Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:
+          Gentile <b>$!{NOME1}</b>,<br />la richiesta di apertura del suo <b>$!{DESPACC}</b> è stata presa in carico dai nostri operatori, ti consigliamo di stampare e conservare questa mail in quanto contenente informazioni utili per completare l'iter di richiesta. Mancano solo pochi passaggi per completare l'apertura del suo conto:
         </mj-text>
       </mj-column>
     </mj-section>
@@ -64,6 +81,52 @@
         <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
           <img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
           Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- step 3 -->
+    <mj-section background-color="#fff" padding="0">
+      <mj-column padding="0 32px 24px 32px">
+        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
+          <img width="64px" alt="step 3" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/3.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
+          <b>Carica i tuoi documenti di riconoscimento,</b><br> qualora non lo avessi già fatto
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- step 4 -->
+    <mj-section background-color="#fff" padding="0">
+      <mj-column padding="0 32px">
+        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
+          <img width="64px" alt="step 3" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/4.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
+          Segui le istruzioni per firmare il set contrattuale e la richiesta di certificato qualificato per la firma digitale, <b>inserendo il codice OTP (One Time Password) ricevuto via SMS.</b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Text 2-->
+    <mj-section background-color="#fff">
+      <mj-column padding="24px 32px">
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
+          Dopo la verifica dei dati e dei documenti, sarà emesso a tuo nome il certificato qualificato per la firma digitale del contratto.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- New customers -->
+    <mj-section background-color="#fff" padding="0 24px">
+      <mj-column padding="24px 32px" css-class="new-customer border-gradient">
+        <mj-text color="#012169" font-family="Open Sans" font-weight="600" font-size="24px" align="center" padding="0">
+          Per i nuovi clienti
+        </mj-text>
+        <mj-divider width="208px" border-color="#3378BF" border-width="4px" border-style="solid" padding="24px 0" />
+        <mj-text font-family="Open Sans" color="#012169" font-size="14px" font-weight="600" line-height="24px" padding="0">
+          A completamento della fase 4, dovrai confermare l'operazione tramite autenticazione con identità digitale. Al termine della quale sarà emesso il certificato qualificato per la firma digitale del contratto. Nei giorni successivi potresti ricevere una telefonata, da parte di un operatore incaricato, per eventuali verifiche.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Text 2-->
+    <mj-section background-color="#fff">
+      <mj-column padding="24px 32px">
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
+          A completamento di tutte le ulteriori verifiche, provvederemo ad inviarti <b>un messaggio di conferma di avvenuta apertura del conto</b> e, solo nel caso in cui non fossi già cliente, ti verranno fornite le credenziali di accesso all'Area Clienti dell'Internet Banking.<br/><br/>Ti ricordiamo infine che l'apertura del conto sarà effettiva salvo buon fine dei controlli posti in essere da <b>Banca Agricola Popolare di Ragusa</b>.
         </mj-text>
       </mj-column>
     </mj-section>

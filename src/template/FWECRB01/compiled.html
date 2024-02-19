@@ -134,6 +134,14 @@
       display: block !important;
     }
 
+    .new-customer {
+      box-sizing: border-box;
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #012169, #3378BF) border-box;
+      border-radius: 12px;
+      border: 4px solid transparent;
+    }
+
     @media only screen and (min-width: 480px) {
       .hide_on_desktop {
         display: none !important;
@@ -195,7 +203,7 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Main -->
+    <!-- Text 1 -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
@@ -212,7 +220,7 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:</div>
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />la richiesta di apertura del suo <b>$!{DESPACC}</b> è stata presa in carico dai nostri operatori, ti consigliamo di stampare e conservare questa mail in quanto contenente informazioni utili per completare l'iter di richiesta. Mancano solo pochi passaggi per completare l'apertura del suo conto:</div>
                               </td>
                             </tr>
                           </tbody>
@@ -283,6 +291,191 @@
                             <tr>
                               <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
                                 <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" /> Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- step 3 -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0 32px 24px 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 3" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/3.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
+                                  <b>Carica i tuoi documenti di riconoscimento,</b><br> qualora non lo avessi già fatto
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- step 4 -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 3" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/4.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" /> Segui le istruzioni per firmare il set contrattuale e la richiesta di certificato qualificato per la firma digitale, <b>inserendo il codice OTP (One Time Password) ricevuto via SMS.</b></div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- Text 2 -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:24px 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Dopo la verifica dei dati e dei documenti, sarà emesso a tuo nome il certificato qualificato per la firma digitale del contratto.</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- New customers -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0 24px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="new-customer-outlook border-gradient-outlook" style="vertical-align:top;width:552px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix new-customer border-gradient" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:24px 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:24px;font-weight:600;line-height:1;text-align:center;color:#012169;">Per i nuovi clienti</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:24px 0;word-break:break-word;">
+                                <p style="border-top:solid 4px #3378BF;font-size:1px;margin:0px auto;width:208px;">
+                                </p>
+                                <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 4px #3378BF;font-size:1px;margin:0px auto;width:208px;" role="presentation" width="208px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:14px;font-weight:600;line-height:24px;text-align:left;color:#012169;">A completamento della fase 4, dovrai confermare l'operazione tramite autenticazione con identità digitale. Al termine della quale sarà emesso il certificato qualificato per la firma digitale del contratto. Nei giorni successivi potresti ricevere una telefonata, da parte di un operatore incaricato, per eventuali verifiche.</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- Text 2 -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:24px 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">A completamento di tutte le ulteriori verifiche, provvederemo ad inviarti <b>un messaggio di conferma di avvenuta apertura del conto</b> e, solo nel caso in cui non fossi già cliente, ti verranno fornite le credenziali di accesso all'Area Clienti dell'Internet Banking.<br /><br />Ti ricordiamo infine che l'apertura del conto sarà effettiva salvo buon fine dei controlli posti in essere da <b>Banca Agricola Popolare di Ragusa</b>.</div>
                               </td>
                             </tr>
                           </tbody>

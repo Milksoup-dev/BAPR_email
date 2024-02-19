@@ -134,6 +134,14 @@
       display: block !important;
     }
 
+    .new-customer {
+      box-sizing: border-box;
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #012169, #3378BF) border-box;
+      border-radius: 12px;
+      border: 4px solid transparent;
+    }
+
     @media only screen and (min-width: 480px) {
       .hide_on_desktop {
         display: none !important;
@@ -195,7 +203,7 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Main -->
+    <!-- Text 1 -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
@@ -212,7 +220,7 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:</div>
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />siamo lieti di comunicarti che la tua richiesta di apertura del conto <b><span style="display: inline-block">$!{DESPACC}</span></b> di <b>Banca Agricola Popolare di Ragusa</b>, contratto <span style="display: inline-block">n. $!{NPRAT}</span>, è stata accettata.<br /><br />L’utilizzo sarà regolato dalle condizioni contrattuali sottoscritte al momento della richiesta, che qui intendiamo confermare integralmente.<br /><br />Riportiamo di seguito alcune informazioni rilevanti:</div>
                               </td>
                             </tr>
                           </tbody>
@@ -245,10 +253,8 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:1;text-align:left;color:#012169;"><img width="64px" alt="step 1" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/1.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-                                  <span>Accedi all'area riservata <a href="$!{LINK}" style="color: #3378BF; font-weight: 700">cliccando qui</a></span>
-                                </div>
+                              <td align="left" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:24px;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:20px;font-weight:600;line-height:1.5;text-align:left;color:#012169;">Codice IBAN: $!{IBAN}<br /> Codice utente: $!{USER}</div>
                               </td>
                             </tr>
                           </tbody>
@@ -265,13 +271,13 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- step 2 -->
+    <!-- Text 2 -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
@@ -281,64 +287,32 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" /> Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span></div>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Se sei un nuovo client, ti informiamo che nelle prossime ore riceverai un <b>SMS</b> con la <b>password personale</b> per accedere all'<b>Area Clienti</b>.<br /> Il codice utente sopra riportato, insieme alla password serviranno per effettuare il primo accesso all'Area Clienti sul sito <a href="https://www.bapr.it/" style="font-weight: 600; text-decoration: none; color: #012169">www.bapr.it</a>.</div>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td></tr></table><![endif]-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Customer service -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#3378BF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#3378BF;background-color:#3378BF;margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3378BF;background-color:#3378BF;width:100%;">
-        <tbody>
-          <tr>
-            <td style="direction:ltr;font-size:0px;padding:64px 32px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:536px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                  <tbody>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                          <tbody>
                             <tr>
-                              <td style="width:96px;">
-                                <img alt="Assistenza_clienti" height="auto" src="https://github.com/Milksoup-dev/BAPR_risorse/blob/main/template_email_conto_self/customer_services.png?raw=true" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="96" />
+                              <td align="left" style="font-size:0px;padding:24px 0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Per i già clienti, rimangono valide le credenziali (nome utente e password) in tuo possesso.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;font-style:italic;line-height:24px;text-align:left;color:#012169;">Il codice utente e la password sono personali e strettamente riservati e non devono essere portati a conoscenza di altre persone. Se lo desidera potrà modificare la password utilizzando la specifica funzione all'interno dell' Area Clienti.</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:24px 0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Ti ringraziamo per aver scelto Banca Agricola Popolare di Ragusa, per qualsiasi informazione e per assistenza non esitare a contattare il nostro Servizio Clienti chiamando il numero <a style="text-decoration: none; color: #012169; font-weight:700" href="tel:+390932603650">0932603650</a> o via mail all'indirizzo <a href="mailto:info@bapr.it" style="text-decoration: none; color: #012169; font-weight:700">info@bapr.it</a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Cordiali saluti.<br /><b>Banca Agricola Popolare di Ragusa</b></div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:24px 0;word-break:break-word;">
-                        <div style="font-family:Open Sans;font-size:24px;font-weight:600;line-height:1;text-align:center;color:#FFFFFF;">Assistenza clienti</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                        <p style="border-top:solid 2px #FFFFFF;font-size:1px;margin:0px auto;width:100%;">
-                        </p>
-                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 2px #FFFFFF;font-size:1px;margin:0px auto;width:536px;" role="presentation" width="536px" ><tr><td style="height:0;line-height:0;"> &nbsp;
-</td></tr></table><![endif]-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="justify" style="font-size:0px;padding:24px 0;word-break:break-word;">
-                        <div style="font-family:Open Sans;font-size:16px;font-weight:400;line-height:1.3;text-align:justify;color:#FFFFFF;">Se hai bisogno di assistenza durante la procedura puoi contattare telefonicamente il Servizio Clienti disponibile al numero <b><a style="text-decoration: none; color: #fff" href="tel:+390932603650">0932603650</a></b>, attivo dal lunedì al venerdì dalle ore 08:30 alle ore 13:30 e dalle ore 15:30 alle ore 16:30.<br /><br />Per maggiori informazioni puoi fare riferimento al nostro sito web <b><a href="https://www.bapr.it/" style="text-decoration: none; color: #fff">www.bapr.it</a></b>, o inviare una mail a <b><a href="mailto:boa@bapr.it" style="text-decoration: none; color: #fff">boa@bapr.it</a></b>. Daremo seguito alla sua richiesta il prima possibile.</div>
                       </td>
                     </tr>
                   </tbody>

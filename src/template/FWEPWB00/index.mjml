@@ -45,7 +45,7 @@
     <mj-section background-color="#fff">
       <mj-column padding="24px 32px">
         <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
-          Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:
+          Gentile <b>$!{NOME1}</b>,<br/>Come da te richiesto è stato effettuato un <b>reset delle credenziali</b> per completare il processo di apertura del rapporto.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -64,6 +64,14 @@
         <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
           <img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
           Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Text 2-->
+    <mj-section background-color="#fff">
+      <mj-column padding="24px 32px">
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
+          A questo punto ti troverai <b>nell'Area Riservata</b> in cui potrai <b>completare</b> la tua richiesta di apertura del rapporto.
         </mj-text>
       </mj-column>
     </mj-section>

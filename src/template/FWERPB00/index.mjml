@@ -6,31 +6,48 @@
         border-radius: 8px;
         position: relative;
       }
-      .hide_on_mobile, .footer-divider {
+
+      .hide_on_mobile,
+      .footer-divider {
         display: none !important;
       }
-      .socials{
+
+      .socials {
         text-align: center;
       }
+
       .hide_on_desktop {
-          display: block !important;
+        display: block !important;
       }
+
+      .new-customer {
+        box-sizing: border-box;
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(to bottom, #012169, #3378BF) border-box;
+        border-radius: 12px;
+        border: 4px solid transparent;
+      }
+
       @media only screen and (min-width: 480px) {
         .hide_on_desktop {
           display: none !important;
         }
+
         .hide_on_mobile {
           display: block !important;
         }
-        .footer-divider{
+
+        .footer-divider {
           display: inline-block !important;
         }
-        .socials{
+
+        .socials {
           text-align: left;
-        }   
-        .bapr-link{
+        }
+
+        .bapr-link {
           text-align: right;
-        }     
+        }
       }
     </mj-style>
   </mj-head>
@@ -41,42 +58,17 @@
         <mj-image width="263px" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/Logo_BAPR.svg"></mj-image>
       </mj-column>
     </mj-section>
-    <!-- Main -->
+    <!-- Text 1-->
     <mj-section background-color="#fff">
       <mj-column padding="24px 32px">
         <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
-          Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:
+          Gentile <b>$!{NOME1}</b>,<br/>siamo siamo spiacenti di comunicarti che la tua richiesta di apertura del conto <b><span style="display: inline-block">$!{DESPACC}</span></b> è stata rifiutata dalla Banca.
         </mj-text>
-      </mj-column>
-    </mj-section>
-    <!-- step 1 -->
-    <mj-section background-color="#fff" padding="0">
-      <mj-column padding="0 32px">
-        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list">
-          <img width="64px" alt="step 1" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/1.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-          <span>Accedi all'area riservata <a href="$!{LINK}" style="color: #3378BF; font-weight: 700">cliccando qui</a></span>
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="24px 0">
+          Qualora necessitassi di chiarimenti  puoi contattarci all'indirizzo e-mail <a href="mailto:boa@bapr.it" style="text-decoration: none; color: #012169; font-weight: 700">boa@bapr.it</a>
         </mj-text>
-      </mj-column>
-    </mj-section>
-    <!-- step 2 -->
-    <mj-section background-color="#fff" padding="0">
-      <mj-column padding="24px 32px">
-        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
-          <img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-          Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span>
-        </mj-text>
-      </mj-column>
-    </mj-section>
-    <!-- Customer service -->
-    <mj-section background-color="#3378BF" padding="64px 32px">
-      <mj-column>
-        <mj-image padding="0" src="https://github.com/Milksoup-dev/BAPR_risorse/blob/main/template_email_conto_self/customer_services.png?raw=true" alt="Assistenza_clienti" width="96px" />
-        <mj-text color="#FFF" font-family="Open Sans" font-weight="600" font-size="24px" align="center" padding="24px 0">
-          Assistenza clienti
-        </mj-text>
-        <mj-divider padding="0" border-width="2px" border-style="solid" border-color="#FFF" />
-        <mj-text color="#FFF" font-family="Open Sans" font-size="16px" padding="24px 0" line-height="1.3" font-weight="400" align="justify">
-          Se hai bisogno di assistenza durante la procedura puoi contattare telefonicamente il Servizio Clienti disponibile al numero <b><a style="text-decoration: none; color: #fff" href="tel:+390932603650">0932603650</a></b>, attivo dal lunedì al venerdì dalle ore 08:30 alle ore 13:30 e dalle ore 15:30 alle ore 16:30.<br /><br />Per maggiori informazioni puoi fare riferimento al nostro sito web <b><a href="https://www.bapr.it/" style="text-decoration: none; color: #fff">www.bapr.it</a></b>, o inviare una mail a <b><a href="mailto:boa@bapr.it" style="text-decoration: none; color: #fff">boa@bapr.it</a></b>. Daremo seguito alla sua richiesta il prima possibile.
+        <mj-text font-family="Open Sans" color="#012169" font-size="16px" line-height="24px" padding="0">
+          Cordiali saluti.<br/><b>Banca Agricola Popolare di Ragusa</b>
         </mj-text>
       </mj-column>
     </mj-section>

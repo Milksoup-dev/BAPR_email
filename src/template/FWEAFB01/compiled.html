@@ -134,6 +134,14 @@
       display: block !important;
     }
 
+    .new-customer {
+      box-sizing: border-box;
+      background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #012169, #3378BF) border-box;
+      border-radius: 12px;
+      border: 4px solid transparent;
+    }
+
     @media only screen and (min-width: 480px) {
       .hide_on_desktop {
         display: none !important;
@@ -195,7 +203,7 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Main -->
+    <!-- Text 1 -->
     <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
@@ -212,7 +220,7 @@
                           <tbody>
                             <tr>
                               <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />le informazioni inserite nella richiesta di apertura del tuo conto sono state salvate, per completarla puoi seguire i seguenti passaggi:</div>
+                                <div style="font-family:Open Sans;font-size:16px;line-height:24px;text-align:left;color:#012169;">Gentile <b>$!{NOME1}</b>,<br />ti ringraziamo per aver firmato il contratto per l’apertura del tuo conto online.<br /><br />Ti informiamo che ora è possibile consultare la copia firmata e accedere all’area per la gestione della pratica dal seguente link:</div>
                               </td>
                             </tr>
                           </tbody>
@@ -247,7 +255,7 @@
                             <tr>
                               <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
                                 <div style="font-family:Open Sans;font-size:16px;line-height:1;text-align:left;color:#012169;"><img width="64px" alt="step 1" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/1.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-                                  <span>Accedi all'area riservata <a href="$!{LINK}" style="color: #3378BF; font-weight: 700">cliccando qui</a></span>
+                                  <span><a href="$!{LINK}" style="color: #3378BF; font-weight: 700">Clicca qui</a> per visualizzare il contratto</span>
                                 </div>
                               </td>
                             </tr>
@@ -277,12 +285,12 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td style="vertical-align:top;padding:24px 32px;">
+                      <td style="vertical-align:top;padding:24px 32px 48px 32px;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
                               <td align="left" class="todo-list" style="background:rgba(97, 165, 218, 0.05);;font-size:0px;padding:20px 20px 20px 90px;word-break:break-word;">
-                                <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" /> Inserisci il tuo codice fiscale e la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span></div>
+                                <div style="font-family:Open Sans;font-size:16px;line-height:1.5;text-align:left;color:#012169;"><img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" /> Per accedere utilizza la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span></div>
                               </td>
                             </tr>
                           </tbody>
