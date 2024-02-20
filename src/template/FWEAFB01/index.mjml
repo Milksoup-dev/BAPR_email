@@ -1,25 +1,7 @@
 <mjml>
   <mj-head>
     <mj-font name="Open Sans" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" />
-    <mj-style>
-      .todo-list {
-        border-radius: 8px;
-        position: relative;
-      }
-
-      .hide_on_mobile,
-      .footer-divider {
-        display: none !important;
-      }
-
-      .socials {
-        text-align: center;
-      }
-
-      .hide_on_desktop {
-        display: block !important;
-      }
-
+    <mj-style inline="inline">
       .new-customer {
         box-sizing: border-box;
         background: linear-gradient(white, white) padding-box,
@@ -29,25 +11,7 @@
       }
 
       @media only screen and (min-width: 480px) {
-        .hide_on_desktop {
-          display: none !important;
-        }
-
-        .hide_on_mobile {
-          display: block !important;
-        }
-
-        .footer-divider {
-          display: inline-block !important;
-        }
-
-        .socials {
-          text-align: left;
-        }
-
-        .bapr-link {
-          text-align: right;
-        }
+        
       }
     </mj-style>
   </mj-head>
@@ -55,7 +19,7 @@
     <!-- Header -->
     <mj-section background-color="#012169" padding="32px">
       <mj-column>
-        <mj-image width="263px" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/Logo_BAPR.svg"></mj-image>
+        <mj-image width="263px" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/Logo_BAPR.png"></mj-image>
       </mj-column>
     </mj-section>
     <!-- Text 1-->
@@ -69,19 +33,31 @@
     <!-- step 1 -->
     <mj-section background-color="#fff" padding="0">
       <mj-column padding="0 32px">
-        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list">
-          <img width="64px" alt="step 1" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/1.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-          <span><a href="$!{LINK}" style="color: #3378BF; font-weight: 700">Clicca qui</a> per visualizzare il contratto</span>
-        </mj-text>
+        <mj-table container-background-color="rgba(97, 165, 218, 0.05)" padding="20px" color="#012169" font-family="Open Sans" font-size="16px">
+          <tr>
+            <td style="width: 80px">
+              <img width="64px" alt="step 1" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/1.png?raw=true" style="vertical-align: middle; margin-right: 10px" />
+            </td>
+            <td>
+              <a href="$!{LINK}" style="color: #3378BF; font-weight: 700">Clicca qui</a> per visualizzare il contratto
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
     <!-- step 2 -->
     <mj-section background-color="#fff" padding="0">
       <mj-column padding="24px 32px 48px 32px">
-        <mj-text container-background-color="rgba(97, 165, 218, 0.05);" color="#012169" font-family="Open Sans" font-size="16px" padding="20px 20px 20px 90px" css-class="todo-list" line-height="1.5">
-          <img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%)" />
-          Per accedere utilizza la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span>
-        </mj-text>
+        <mj-table container-background-color="rgba(97, 165, 218, 0.05)" padding="20px" color="#012169" font-family="Open Sans" font-size="16px">
+          <tr>
+            <td style="width: 80px">
+              <img width="64px" alt="step 2" src="https://github.com/Milksoup-dev/BAPR_email/blob/main/src/img/2.png?raw=true" style="vertical-align: middle; margin-right: 10px" />
+            </td>
+            <td>
+              Per accedere utilizza la seguente password:<br /><span style="color: #3378BF; font-weight: 700">$!{PASSWD}</a></span>
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
     <!-- Customer service -->
@@ -111,28 +87,23 @@
     </mj-section>
     <!-- Footer -->
     <mj-section background-color="#012169" padding="12px 32px">
-      <mj-column vertical-align="middle" padding="0">
-        <!-- Desktop bapr link -->
-        <mj-text padding="0" font-family="Open Sans" font-weight="600" font-size="24px" color="#fff" align="right" css-class="hide_on_mobile">
-          <a href="https://www.bapr.it/" style="text-decoration: none; color: #fff">bapr.it</a>
-        </mj-text>
-        <!-- Mobile bapr link -->
-        <mj-text padding-top="32px" font-family="Open Sans" font-weight="600" font-size="24px" color="#fff" align="center" css-class="hide_on_desktop">
-          <a href="https://www.bapr.it/" style="text-decoration: none; color: #fff">bapr.it</a>
-        </mj-text>
-      </mj-column>
-      <mj-column padding="0" width="16px" vertical-align="middle" css-class="footer-divider">
-        <mj-text align="center">
-          <img src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/vertical_divider.svg" />
-        </mj-text>
-      </mj-column>
-      <mj-column vertical-align="middle" padding="0">
-        <mj-social icon-padding="0" icon-size="28px" css-class="socials">
-          <mj-social-element href="https://www.linkedin.com/company/banca-agricola-popolare-di-ragusa" target="_blank" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/linkedin.svg">
-          </mj-social-element>
-          <mj-social-element href="https://www.youtube.com/@BancaAgricolaPopolareDiRagusa" target="_blank" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/youtube.svg">
-          </mj-social-element>
-        </mj-social>
+      <mj-column padding="12px 0">
+        <mj-table width="180px" align="center" font-family="Open Sans" font-weight="600" font-size="24px" color="#fff">
+          <tr>
+            <td style="text-align: right; width: 100px; padding-right: 20px">
+              <a href="https://www.bapr.it/" style="color: #fff; text-decoration: none">bapr.it</a>
+            </td>
+            <td style="width: 1px; background-color: #3378BF"></td>
+            <td style="padding-left: 20px; width: 80px; text-align: left">
+              <a href="https://www.linkedin.com/company/banca-agricola-popolare-di-ragusa" target="_blank" style="text-decoration: none">
+                <img alt="linkedin" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/linkedin.png" style="vertical-align: middle"/>
+              </a>
+              <a href="https://www.youtube.com/@BancaAgricolaPopolareDiRagusa" target="_blank" style="text-decoration: none">
+                <img alt="youtube" src="https://raw.githubusercontent.com/Milksoup-dev/BAPR_risorse/main/template_email_conto_self/youtube.png" style="vertical-align: middle"/>
+              </a>
+            </td>
+          </tr>
+        </mj-table>  
       </mj-column>
     </mj-section>
 </mjml>
